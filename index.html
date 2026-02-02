@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smålands Assist UF – Vi kommer till dig</title>
+  <meta name="description" content="Smålands Assist UF hjälper dig med småjobb som gräsklippning, däckbyte och biltvätt. Vi kommer till dig – enkelt och smidigt." />
+
+  <style>
+    body { margin:0; font-family: Arial, Helvetica, sans-serif; background: #f5f7fa; color: #333; line-height:1.6; }
+    header { background: linear-gradient(135deg, #1e7f5c, #2fa97c); color:white; padding:70px 20px; text-align:center; }
+    header h1 { margin:0 0 10px; font-size:2.6rem; }
+    header p { font-size:1.2rem; max-width:700px; margin:0 auto 25px; }
+    .cta-btn { background:white; color:#1e7f5c; padding:14px 28px; border-radius:30px; text-decoration:none; font-weight:bold; }
+    section { padding:60px 20px; max-width:1100px; margin:auto; }
+    h2 { text-align:center; margin-bottom:40px; }
+    .services { display:grid; grid-template-columns:repeat(auto-fit, minmax(230px,1fr)); gap:20px; }
+    .card { background:white; padding:25px; border-radius:14px; box-shadow:0 6px 16px rgba(0,0,0,0.08); }
+    .highlight { background:white; border-left:6px solid #1e7f5c; padding:30px; border-radius:10px; box-shadow:0 4px 12px rgba(0,0,0,0.06); }
+    .steps { display:grid; grid-template-columns:repeat(auto-fit, minmax(250px,1fr)); gap:20px; text-align:center; }
+    .step { background:white; padding:25px; border-radius:14px; box-shadow:0 4px 12px rgba(0,0,0,0.08); }
+    .prices { display:grid; grid-template-columns:repeat(auto-fit, minmax(230px,1fr)); gap:20px; }
+    .price { background:white; padding:25px; border-radius:14px; box-shadow:0 4px 12px rgba(0,0,0,0.08); text-align:center; }
+    .price strong { font-size:1.4rem; color:#1e7f5c; }
+    .booking { background:white; padding:40px; border-radius:14px; box-shadow:0 6px 16px rgba(0,0,0,0.08); max-width:700px; margin:auto; }
+    form { display:grid; gap:15px; }
+    input, select, textarea, button { padding:14px; font-size:1rem; border-radius:8px; border:1px solid #ccc; }
+    button { background:#1e7f5c; color:white; border:none; font-size:1.1rem; cursor:pointer; }
+    button:hover { background:#166447; }
+    footer { background:#eef2f5; padding:35px 20px; text-align:center; font-size:0.9rem; }
+    footer p { margin:6px 0; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Smålands Assist UF</h1>
+  <p>Småjobb gjort enkelt. Vi kommer till dig – så slipper du åka, vänta eller krångla.</p>
+  <a href="#boka" class="cta-btn">Boka nu</a>
+</header>
+
+<section>
+  <h2>Vår nisch – därför väljer kunder oss</h2>
+  <div class="highlight">
+    <p><strong>Smålands Assist kommer alltid till kunden.</strong> Till skillnad från många andra företag slipper du transport, köer och planering. Vi utför jobbet där du är – hemma, på uppfarten eller på parkeringen.</p>
+  </div>
+</section>
+
+<section>
+  <h2>Våra tjänster</h2>
+  <div class="services">
+    <div class="card"><h3>Gräsklippning</h3><p>Vi klipper din gräsmatta snabbt och noggrant.</p></div>
+    <div class="card"><h3>Däckbyte</h3><p>Säkert däckbyte hemma hos dig.</p></div>
+    <div class="card"><h3>Biltvätt</h3><p>Handtvätt av bilen där den står parkerad.</p></div>
+    <div class="card"><h3>Övriga småjobb</h3><p>Kontakta oss om du behöver hjälp med något annat.</p></div>
+  </div>
+</section>
+
+<section>
+  <h2>Så funkar det</h2>
+  <div class="steps">
+    <div class="step"><h3>1. Boka</h3><p>Fyll i formuläret på hemsidan.</p></div>
+    <div class="step"><h3>2. Vi kommer till dig</h3><p>Vi åker till den adress du anger.</p></div>
+    <div class="step"><h3>3. Jobbet klart</h3><p>Snabbt, smidigt och utan krångel.</p></div>
+  </div>
+</section>
+
+<section>
+  <h2>Priser</h2>
+  <div class="prices">
+    <div class="price"><h3>Gräsklippning</h3><strong>Från 299 kr</strong></div>
+    <div class="price"><h3>Däckbyte</h3><strong>Från 399 kr</strong></div>
+    <div class="price"><h3>Biltvätt</h3><strong>Från 249 kr</strong></div>
+  </div>
+  <p style="text-align:center;margin-top:20px;">Exakta priser ges vid bokning.</p>
+</section>
+
+<section id="boka">
+  <h2>Boka Smålands Assist</h2>
+  <div class="booking">
+    <form id="bookingForm">
+      <input type="text" name="entry.1829546113" placeholder="Namn" required />
+      <input type="email" name="entry.101375110" placeholder="E-post" required />
+      <input type="tel" name="entry.1648189759" placeholder="Telefonnummer" required />
+      <textarea name="entry.562275881" rows="4" placeholder="Meddelande (valfritt)"></textarea>
+      <input type="text" name="entry.619883507" placeholder="Adress" required />
+      <select name="entry.1102694232" required>
+        <option value="">Välj tjänst</option>
+        <option>Gräsklippning</option>
+        <option>Däckbyte</option>
+        <option>Biltvätt</option>
+        <option>Annat småjobb</option>
+      </select>
+      <button type="submit">Skicka bokningsförfrågan</button>
+    </form>
+    <p style="font-size:0.9rem;margin-top:15px;">Efter bokning kontaktar vi dig för bekräftelse.</p>
+  </div>
+</section>
+
+<footer>
+  <p><strong>Smålands Assist UF</strong></p>
+  <p>📍 Småland</p>
+  <p>📞 Telefon: 076-338 04 04</p>
+  <p>✉️ E-post: smalandsassistuf@gmail.com</p>
+  <p>© 2026 Smålands Assist UF</p>
+</footer>
+
+<script>
+  const form = document.getElementById('bookingForm');
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+    const url = 'https://docs.google.com/forms/d/e/1FAIpQLSfoJhJ9ShdGeUxTrEKRl1N_wlwYk9GhiKVhDgqZAZdprwCv4A/formResponse';
+    const data = new FormData(form);
+    fetch(url, { method: 'POST', mode: 'no-cors', body: data })
+      .then(() => alert('Tack! Din bokning har skickats. Vi hör av oss snart.'))
+      .catch(() => alert('Något gick fel, försök igen.'));
+    form.reset();
+  });
+</script>
+
+</body>
+</html>
